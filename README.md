@@ -19,3 +19,4 @@ Quiz Hero is a web application that allows users to test their knowledge by play
 * HTML
 * Tailwind CSS
 * Font Awesome
+* JSON
