@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Quiz Hero | Blog Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              common: ["Rubik", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="h-16 flex items-center shadow-sm">
+      <nav class="flex justify-between items-center w-9/12 mx-auto">
+        <div class="text-zinc-800 font-bold uppercase">
+          <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+          <p class="text-[10px] font-normal capitalize -mt-1">
+            Get ready to Quiz and be amazed!
+          </p>
+        </div>
+        <a
+          href="/index.html"
+          id="blog-btn"
+          class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white"
+        >
+          Blog
+        </a>
+      </nav>
+    </header>
+    <main>
+      <section class="container mx-auto py-10">
+        <article class="space-y-4 border-b-2 pb-5">
+          <h2 class="text-2xl text-red-600 font-bold">
+            What is event delegation in JavaScript, and how does it work?
+          </h2>
+          <p>
+            <span class="text-green-600">Answer: </span>Event delegation is a
+            technique in JavaScript where instead of attaching event listeners
+            to individual elements, you attach a single event listener to a
+            parent element. This listener then waits for events to bubble up
+            from the child elements. When an event occurs, the parent element's
+            event listener handles it, and you can use event.target to identify
+            the specific child element that triggered the event. Event
+            delegation is useful for efficiently handling events on dynamically
+            created or large numbers of elements.
+          </p>
+        </article>
+
+        <article class="space-y-4 border-b-2 pb-5">
+          <h2 class="text-2xl text-red-600 font-bold">
+            Explain the concept of asynchronous programming in JavaScript and
+            how it differs from synchronous programming.
+          </h2>
+          <p>
+            <span class="text-green-600">Answer: </span>Asynchronous programming
+            in JavaScript allows tasks to be executed concurrently, without
+            blocking the execution of subsequent code. This is achieved through
+            mechanisms like callbacks, promises, and async/await. In contrast,
+            synchronous programming executes tasks one after the other, blocking
+            the execution of subsequent code until each task is completed.
+            Asynchronous programming is essential for handling tasks such as
+            fetching data from servers, performing animations, and executing
+            time-consuming operations without freezing the user interface.
+          </p>
+        </article>
+
+        <article class="space-y-4 border-b-2 pb-5">
+          <h2 class="text-2xl text-red-600 font-bold">
+            What are the differences between let, const, and var for declaring
+            variables in JavaScript?
+          </h2>
+          <p>
+            <span class="text-green-600">Answer: </span>let and const are
+            block-scoped variables introduced in ES6, while var is
+            function-scoped. let allows reassignment of its value, whereas const
+            creates a constant variable whose value cannot be changed once
+            assigned. Variables declared with var are hoisted to the top of
+            their scope, which can lead to unexpected behavior. let and const
+            provide better control over variable scoping and are generally
+            preferred over var in modern JavaScript development.
+          </p>
+        </article>
+
+        <article class="space-y-4 border-b-2 pb-5">
+          <h2 class="text-2xl text-red-600 font-bold">
+            Explain the concept of prototypal inheritance in JavaScript and how
+            it differs from classical inheritance in other programming
+            languages.
+          </h2>
+          <p>
+            <span class="text-green-600">Answer: </span>Prototypal inheritance
+            is a fundamental concept in JavaScript where objects inherit
+            properties and methods directly from other objects. Each object in
+            JavaScript has a prototype chain, which allows it to inherit
+            properties and methods from its prototype object. This differs from
+            classical inheritance, commonly found in languages like Java and
+            C++, where classes are used to create objects and inheritance is
+            achieved through class hierarchies. Prototypal inheritance in
+            JavaScript promotes code reusability and flexibility, allowing
+            objects to inherit behavior dynamically at runtime.
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
